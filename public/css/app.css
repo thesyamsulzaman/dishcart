@@ -1,0 +1,245 @@
+:root {
+  /*--spaceBlack: #000;*/
+  --softWhite: #fff;
+  --darkGray: gray;
+}
+
+/*=================*/
+/* Global Styling  */
+/*=================*/
+
+/*======*/
+/* BASE */
+/*======*/
+
+* {
+  margin:0;
+  padding:0;
+  /*border:1px solid magenta;*/
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--softWhite);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.mt-6,
+.my-6 {
+  margin-top: 5.5rem !important;
+}
+
+/*========*/
+/* LAYOUT */
+/*========*/
+
+#header, #banner, #recipes, #footer {
+  position:relative;
+}
+
+#header nav {
+  border-bottom: 1px solid darkgray;
+}
+
+#recipes {  }
+#recipe-detail {  }
+
+#footer { position:relative; }
+
+/*=========*/
+/* MODULES */
+/*=========*/
+
+
+/*--------------*/
+/* IMGs MODULES */
+/*--------------*/
+
+.profile-cover-picture {
+  filter: brightness(40%);
+}
+
+.profile-picture {
+  width:150px;
+  height:150px;
+  padding:0;
+  margin:0 auto;
+  left:0;
+  right:0;
+  top:120px;
+  bottom:0;
+  border-radius: 50%;
+  object-fit:cover;
+}
+.search-button {
+  background-size: auto;
+  background-repeat:no-repeat;
+  background-position:center;
+  border: none;
+  height: 18px;
+
+}
+
+/*-----------------------*/
+/* RECIPE DETAIL MODULES */
+/*-------==--------------*/
+
+.recipe-detail-img {
+  height:280px;
+  background-size:cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.recipe-detail-box {
+  color: #111;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+}
+
+
+
+/*--------------*/
+/* CARD MODULES */
+/*--------------*/
+
+.profile-card-toggle {
+  cursor: pointer;
+}
+.profile-card {
+  right: 1em;
+  display: none;
+}
+.profile-card.active {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    left:1em;
+  }
+
+}
+
+.chef-detail-card {
+  position:relative;
+}
+
+.card-body {
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+.card-rate-name {
+  color: var(--darkGray);
+}
+.card-title-link {
+  color: #111;
+}
+
+
+/*------------------*/
+/* CAROUSEL MODULES */
+/*------------------*/
+
+.carousel-inner {
+  border-radius: 8px;
+}
+
+
+
+/*----------------*/
+/* BANNER MODUELS */
+/*----------------*/
+
+.banner-text {
+  color: #fff;
+  z-index: 2;
+  position:relative;
+  max-width:300px;
+}
+
+.banner-overlay {
+  background-color: #111;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:.6;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+/*----------------*/
+/* BUTTON MODULES */
+/*----------------*/
+
+.btn {
+  font-size: 14px;
+}
+.btn-rounded {
+  border-radius: 13px;
+}
+.exit-button {
+  right:0;
+  z-index: 999;
+}
+
+
+/*--------------*/
+/* FORM MODULES */
+/*--------------*/
+
+.form-borderless {
+  border: none;
+  border-radius:0;
+  background:none;
+  /*border-bottom: 1px solid var(--spaceBlack);*/
+  padding-left:0;
+  padding-right:0;
+}
+
+.form-patched {
+  border: 5px solid var(--spaceBlack);
+}
+
+
+
+/*=======*/
+/* STATE */
+/*=======*/
+
+/*-------------*/
+/* FORM STATES */
+/*-------------*/
+
+.form-control:focus{
+  color: #495057;
+  border-color: var(--spaceBlack);
+  outline: 0;
+  box-shadow: none;
+  border-radius: 0;
+  background:none;
+}
+
+
+/*-------------*/
+/* LINK STATES */
+/*-------------*/
+
+a:hover {
+  color: #111;
+}
+
+/*=======*/
+/* THEME */
+/*=======*/

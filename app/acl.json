@@ -1,0 +1,19 @@
+{
+  "Guest": {
+    "denied": {
+      "User": ["logout"]
+    },
+    "Home": ["*"],
+    "Recipes": ["*"],
+    "Categories": ["*"],
+    "Chef": ["*"],
+    "User": ["*"],
+    "Dashboard": ["*"],
+    "Restricted": ["*"]
+  },
+  "LoggedIn": {
+    "denied": {},
+    "User": ["*"],
+    "Students": ["*"]
+  }
+}

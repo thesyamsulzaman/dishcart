@@ -1,0 +1,8 @@
+{
+  "Home": "home",
+  "Categories": "categories",
+  "Recipes": "recipes",
+  "Login": "user/login",
+  "Register": "user/register",
+  "Logout": "user/logout"
+}
